@@ -1,0 +1,47 @@
+/* Resetear márgenes y padding del body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Fuente en 14px */
+body, ul, li, a {
+    font-size: 14px;
+}
+
+/* Estilos del contenedor y la lista */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.enlaces {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.enlaces li {
+    margin: 10px 0; /* Espaciado entre los botones */
+}
+
+.enlaces a {
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    display: inline-block;
+    width: 150px; /* Ancho fijo para todos los botones */
+    text-align: center; /* Centrar texto horizontalmente */
+    transition: color 0.3s, font-size 0.3s;
+}
+
+/* Color Hover Y Tamaño */
+.enlaces a:hover {
+    color: blue;
+    font-size: 16px;
+}
